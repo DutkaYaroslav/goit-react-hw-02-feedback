@@ -13,26 +13,6 @@ export default class App extends Component {
     bad: 0,
   };
 
-  countTotalFeedback = () => {
-    this.setState(prevState => {
-      return {
-        total: prevState.good + prevState.neutral + prevState.bad,
-      };
-    });
-  };
-
-  // countPositiveFeedbackPercentage = () => {
-  //   this.setState(prevState => {
-  //     return {
-  //       percentage: Math.round(
-  //         (prevState.good /
-  //           (prevState.good + prevState.neutral + prevState.bad)) *
-  //           100,
-  //       ),
-  //     };
-  //   });
-  // };
-
   handleFeedback = field => {
     this.setState(prevState => {
       return {
